@@ -14,6 +14,11 @@
 		57EC0DA11AFF8ECA003272E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DA01AFF8ECA003272E4 /* Images.xcassets */; };
 		57EC0DA41AFF8ECA003272E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DA21AFF8ECA003272E4 /* LaunchScreen.xib */; };
 		57EC0DB01AFF8ECA003272E4 /* UBISEcallFR01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DAF1AFF8ECA003272E4 /* UBISEcallFR01Tests.m */; };
+		57EC0DBB1AFF8FA3003272E4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBA1AFF8FA3003272E4 /* icon.png */; };
+		57EC0DBD1AFF8FB4003272E4 /* ic_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */; };
+		57EC0DBF1AFF8FD0003272E4 /* IdentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DBE1AFF8FD0003272E4 /* IdentViewController.m */; };
+		57EC0DC51AFF8FE6003272E4 /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DC21AFF8FE6003272E4 /* CAllServer.m */; };
+		57EC0DC61AFF8FE6003272E4 /* DwfmsSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DC41AFF8FE6003272E4 /* DwfmsSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		57EC0DA91AFF8ECA003272E4 /* UBISEcallFR01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBISEcallFR01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EC0DAE1AFF8ECA003272E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EC0DAF1AFF8ECA003272E4 /* UBISEcallFR01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBISEcallFR01Tests.m; sourceTree = "<group>"; };
+		57EC0DBA1AFF8FA3003272E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fire.png; sourceTree = "<group>"; };
+		57EC0DBE1AFF8FD0003272E4 /* IdentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentViewController.m; sourceTree = "<group>"; };
+		57EC0DC01AFF8FD7003272E4 /* IdentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentViewController.h; sourceTree = "<group>"; };
+		57EC0DC11AFF8FE6003272E4 /* CAllServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
+		57EC0DC21AFF8FE6003272E4 /* CAllServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAllServer.m; sourceTree = "<group>"; };
+		57EC0DC31AFF8FE6003272E4 /* DwfmsSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DwfmsSegue.h; sourceTree = "<group>"; };
+		57EC0DC41AFF8FE6003272E4 /* DwfmsSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DwfmsSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +94,17 @@
 		57EC0D921AFF8ECA003272E4 /* UBISEcallFR01 */ = {
 			isa = PBXGroup;
 			children = (
+				57EC0DB91AFF8F93003272E4 /* image */,
 				57EC0D971AFF8ECA003272E4 /* AppDelegate.h */,
 				57EC0D981AFF8ECA003272E4 /* AppDelegate.m */,
 				57EC0D9A1AFF8ECA003272E4 /* ViewController.h */,
 				57EC0D9B1AFF8ECA003272E4 /* ViewController.m */,
+				57EC0DC11AFF8FE6003272E4 /* CAllServer.h */,
+				57EC0DC21AFF8FE6003272E4 /* CAllServer.m */,
+				57EC0DC31AFF8FE6003272E4 /* DwfmsSegue.h */,
+				57EC0DC41AFF8FE6003272E4 /* DwfmsSegue.m */,
+				57EC0DC01AFF8FD7003272E4 /* IdentViewController.h */,
+				57EC0DBE1AFF8FD0003272E4 /* IdentViewController.m */,
 				57EC0D9D1AFF8ECA003272E4 /* Main.storyboard */,
 				57EC0DA01AFF8ECA003272E4 /* Images.xcassets */,
 				57EC0DA21AFF8ECA003272E4 /* LaunchScreen.xib */,
@@ -117,6 +137,15 @@
 				57EC0DAE1AFF8ECA003272E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57EC0DB91AFF8F93003272E4 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				57EC0DBA1AFF8FA3003272E4 /* icon.png */,
+				57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +231,8 @@
 				57EC0D9F1AFF8ECA003272E4 /* Main.storyboard in Resources */,
 				57EC0DA41AFF8ECA003272E4 /* LaunchScreen.xib in Resources */,
 				57EC0DA11AFF8ECA003272E4 /* Images.xcassets in Resources */,
+				57EC0DBD1AFF8FB4003272E4 /* ic_fire.png in Resources */,
+				57EC0DBB1AFF8FA3003272E4 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +251,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				57EC0D9C1AFF8ECA003272E4 /* ViewController.m in Sources */,
+				57EC0DC61AFF8FE6003272E4 /* DwfmsSegue.m in Sources */,
 				57EC0D991AFF8ECA003272E4 /* AppDelegate.m in Sources */,
 				57EC0D961AFF8ECA003272E4 /* main.m in Sources */,
+				57EC0DBF1AFF8FD0003272E4 /* IdentViewController.m in Sources */,
+				57EC0DC51AFF8FE6003272E4 /* CAllServer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UBISEcallFR01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = UBISEcallFR01/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +452,7 @@
 				57EC0DB51AFF8ECA003272E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		57EC0DB61AFF8ECA003272E4 /* Build configuration list for PBXNativeTarget "UBISEcallFR01Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +461,7 @@
 				57EC0DB81AFF8ECA003272E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
