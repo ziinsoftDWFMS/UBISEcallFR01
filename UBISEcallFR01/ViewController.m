@@ -30,7 +30,7 @@ NSString* idForVendor;
     //[param setValue:@"" forKey:@"hp"];
     
     [param setValue:@"S" forKey:@"gubun"];
-    
+    [param setObject:@"FR01" forKey:@"code"];
     [param setObject:idForVendor forKey:@"deviceId"];
     
     //deviceId
