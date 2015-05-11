@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,109 +15,148 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-up-RLK">
-                                <rect key="frame" x="9" y="172" width="288" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="화재 발생" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-0c-Hoe">
+                                <rect key="frame" x="16" y="94" width="568" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-8q-3Cs">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="UBIS Ecall 발신(화재)" id="DP0-GR-i8Z"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_fire.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-yl-SV3">
+                                <rect key="frame" x="5" y="28" width="43" height="44"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr7-Gq-C8M">
+                                <rect key="frame" x="156" y="192" width="288" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="전송">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NQe-2D-Sf0"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ybT-LC-li3">
-                                <rect key="frame" x="9" y="134" width="288" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7A-JX-xyx">
+                                <rect key="frame" x="156" y="134" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="화재 발생" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEz-pA-rMR">
-                                <rect key="frame" x="9" y="94" width="288" height="32"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccc-mM-0Qj">
-                                <rect key="frame" x="-7" y="28" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="UBIS Ecall 발신(화재)" id="cB0-Ec-aGB"/>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_fire.png" translatesAutoresizingMaskIntoConstraints="NO" id="17E-hK-gUl">
-                                <rect key="frame" x="9" y="28" width="43" height="44"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOr-8q-3Cs" firstAttribute="top" secondItem="Zgf-yl-SV3" secondAttribute="top" id="G1c-2B-xa3"/>
+                            <constraint firstAttribute="centerX" secondItem="h7A-JX-xyx" secondAttribute="centerX" id="JbD-31-H1J"/>
+                            <constraint firstItem="rOr-8q-3Cs" firstAttribute="bottom" secondItem="Zgf-yl-SV3" secondAttribute="bottom" id="P8W-hy-1Sa"/>
+                            <constraint firstItem="sCK-0c-Hoe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="PF4-nN-aPF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rOr-8q-3Cs" secondAttribute="trailing" constant="-16" id="fqQ-0k-Wij"/>
+                            <constraint firstAttribute="centerX" secondItem="zr7-Gq-C8M" secondAttribute="centerX" id="fzE-lb-6NV"/>
+                            <constraint firstItem="sCK-0c-Hoe" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kKW-kf-ydZ"/>
+                            <constraint firstItem="rOr-8q-3Cs" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="w7r-pH-h7O"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="LEl-ED-Z9B"/>
+                    <connections>
+                        <outlet property="locationTxt" destination="h7A-JX-xyx" id="xbo-lc-Miq"/>
+                        <outlet property="view" destination="zr7-Gq-C8M" id="pBL-JM-QLh"/>
+                        <segue destination="ava-x5-gbS" kind="show" identifier="showIdentiview" id="jlz-5T-kBP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="234.66666666666666" y="406.12"/>
+            <point key="canvasLocation" x="440" y="429"/>
         </scene>
         <!--Ident View Controller-->
-        <scene sceneID="VP9-Du-Y9T">
+        <scene sceneID="P6M-ev-rIP">
             <objects>
-                <viewController restorationIdentifier="IdentViewController" storyboardIdentifier="IdentViewController" id="fBM-0Z-KBP" customClass="IdentViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="IdentViewController" storyboardIdentifier="IdentViewController" id="ava-x5-gbS" customClass="IdentViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EFf-r5-Zyv"/>
-                        <viewControllerLayoutGuide type="bottom" id="LQ9-Lf-D1J"/>
+                        <viewControllerLayoutGuide type="top" id="04F-Jl-bUj"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bly-p6-9xv"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="WyC-WK-lTT">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <view key="view" contentMode="scaleToFill" id="zhX-68-qZ5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="전화번호를 입력해주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wt-dj-IhU">
-                                <rect key="frame" x="77" y="101" width="167" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="전화번호를 입력해주세요" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mC6-Tm-DnS">
+                                <rect key="frame" x="217" y="101" width="167" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV7-SL-rLC">
-                                <rect key="frame" x="111" y="207" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2v-Fr-oU0">
+                                <rect key="frame" x="217" y="233" width="30" height="30"/>
                                 <state key="normal" title="전송">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendEvent:" destination="ava-x5-gbS" eventType="touchUpInside" id="8g1-yj-AkM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWv-6Z-mp3">
-                                <rect key="frame" x="178" y="207" width="30" height="30"/>
-                                <state key="normal" title="취소">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLy-mp-GHP">
-                                <rect key="frame" x="77" y="146" width="167" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Es-p0-OkM">
+                                <rect key="frame" x="217" y="142" width="167" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNN-uh-8IV">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baU-zl-FfX">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="UBIS Ecall 발신(화재)" id="bX2-cF-473"/>
+                                    <navigationItem title="UBIS Ecall 발신(화재)" id="CwH-xq-0oG"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_fire.png" translatesAutoresizingMaskIntoConstraints="NO" id="0f1-lc-F2S">
-                                <rect key="frame" x="16" y="28" width="43" height="44"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95x-oy-Vno">
-                                <rect key="frame" x="30" y="237" width="261" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-YG-9fq">
+                                <rect key="frame" x="170" y="180" width="261" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_fire.png" translatesAutoresizingMaskIntoConstraints="NO" id="9cY-8s-pcY">
+                                <rect key="frame" x="7" y="28" width="43" height="44"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-92-QY1">
+                                <rect key="frame" x="354" y="233" width="30" height="30"/>
+                                <state key="normal" title="취소">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelEvent:" destination="ava-x5-gbS" eventType="touchUpInside" id="TiA-GN-Bdj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9cY-8s-pcY" firstAttribute="top" secondItem="baU-zl-FfX" secondAttribute="top" id="5IE-4U-B6O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="baU-zl-FfX" secondAttribute="trailing" constant="-16" id="Diy-xr-ZqF"/>
+                            <constraint firstItem="baU-zl-FfX" firstAttribute="leading" secondItem="zhX-68-qZ5" secondAttribute="leadingMargin" constant="-16" id="RAm-UP-ugu"/>
+                            <constraint firstItem="9Es-p0-OkM" firstAttribute="trailing" secondItem="4PZ-92-QY1" secondAttribute="trailing" id="fQh-Vy-hcX"/>
+                            <constraint firstAttribute="centerX" secondItem="ihj-YG-9fq" secondAttribute="centerX" constant="-0.5" id="hTd-F1-bzK"/>
+                            <constraint firstItem="9cY-8s-pcY" firstAttribute="bottom" secondItem="baU-zl-FfX" secondAttribute="bottom" id="lRC-31-Nrw"/>
+                            <constraint firstAttribute="centerX" secondItem="mC6-Tm-DnS" secondAttribute="centerX" constant="-0.5" id="oKx-38-VXx"/>
+                            <constraint firstAttribute="centerX" secondItem="9Es-p0-OkM" secondAttribute="centerX" constant="-0.5" id="sHK-xS-tpM"/>
+                            <constraint firstItem="R2v-Fr-oU0" firstAttribute="leading" secondItem="9Es-p0-OkM" secondAttribute="leading" id="vlT-rR-6Ml"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vd7-a0-1lD"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="4PZ-92-QY1" id="eU9-0W-7nI"/>
+                        <outlet property="infoText" destination="ihj-YG-9fq" id="xPw-bI-Ggo"/>
+                        <outlet property="phoneText" destination="9Es-p0-OkM" id="Xa4-oC-Xo7"/>
+                        <outlet property="sendButton" destination="R2v-Fr-oU0" id="jdc-9b-FjD"/>
+                        <segue destination="vXZ-lx-hvc" kind="show" identifier="showMainView" id="VlL-1w-KwU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MYB-bE-9mH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVq-6P-ucL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="600" y="406"/>
+            <point key="canvasLocation" x="1290" y="428.87323943661971"/>
         </scene>
     </scenes>
     <resources>
         <image name="ic_fire.png" width="513" height="517"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

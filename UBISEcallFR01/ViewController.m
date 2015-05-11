@@ -8,12 +8,18 @@
 
 @implementation ViewController
 
+
+BOOL navigateYN;
+NSString* idForVendor;
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     UIDevice *device = [UIDevice currentDevice];
-    NSString* idForVendor = [device.identifierForVendor UUIDString];
+    idForVendor = [device.identifierForVendor UUIDString];
     
     NSLog(@">>>>>%@",idForVendor);
     //서버에서 결과 리턴받기
@@ -69,18 +75,18 @@
         
         // [self presentModalViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"IdentView"] animated:YES];
         
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *identViewController = [storyboard instantiateViewControllerWithIdentifier:@"IdentViewController"];
+        //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        //UIViewController *identViewController = [storyboard instantiateViewControllerWithIdentifier:@"IdentViewController"];
         
-        self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
-        [self presentViewController:identViewController animated:NO completion:nil];
+        //self.navigationController.modalPresentationStyle = UIModalPresentationCurrentContext;
+        //[self presentViewController:identViewController animated:NO completion:nil];
         
         //  identViewController.view.alpha = 0;
         //  [UIView animateWithDuration:0.5 animations:^{
         //      identViewController.view.alpha = 1;
         //  } completion:^(BOOL finished) {
         //         }];
-        
+        navigateYN = YES;
         
     }else{
         
@@ -89,7 +95,7 @@
         
         
         NSLog(@">>4566>>>1234%@",idForVendor);
-        
+        navigateYN = NO;
     }
     
 }
@@ -100,6 +106,13 @@
 }
 
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    if (navigateYN) {
+        [self performSegueWithIdentifier:@"showIdentiview" sender:self];
+    }
+}
+
 
 - (IBAction)click:(id)sender {
     UIDevice *device = [UIDevice currentDevice];
@@ -107,7 +120,7 @@
     
     CAllServer* res = [CAllServer alloc];
     NSMutableDictionary* param = [[NSMutableDictionary alloc] init];
-    [param setObject:@"EV01" forKey:@"code"];
+    [param setObject:@"FR01" forKey:@"code"];
     [param setObject:idForVendor forKey:@"deviceId"];
     [param setValue:self.locationTxt.text forKey:@"location"];
     
@@ -119,6 +132,17 @@
 
 
 
+- (BOOL)locationTxt:(UITextField *)locationTxt shouldChangeCharactersInRange:
+(NSRange)range replacementString:(NSString *)string
+{
+    //제한 할 글자 수
+    int maxLength = 5;
+    
+    //string은 현재 키보드에서 입력한 문자 한개를 의미한다.
+    if(string && [string length] && ([locationTxt.text length] >= maxLength))   return NO;
+    
+    return TRUE;
+}
 
 
 @end
