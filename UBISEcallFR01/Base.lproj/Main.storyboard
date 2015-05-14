@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="엘리베이터 고장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-0c-Hoe">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="화재 발생" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-0c-Hoe">
                                 <rect key="frame" x="16" y="94" width="568" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -27,7 +27,7 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rOr-8q-3Cs">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="UBIS Ecall 발신(승강기)" id="DP0-GR-i8Z"/>
+                                    <navigationItem title="UBIS Ecall 발신(화재)" id="DP0-GR-i8Z"/>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="43" verticalHuggingPriority="43" horizontalCompressionResistancePriority="43" verticalCompressionResistancePriority="43" ambiguous="YES" misplaced="YES" image="ic_fire.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zgf-yl-SV3">
@@ -107,7 +107,7 @@
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baU-zl-FfX">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <items>
-                                    <navigationItem title="UBIS Ecall 발신(승강기)" id="CwH-xq-0oG"/>
+                                    <navigationItem title="UBIS Ecall 발신(화재)" id="CwH-xq-0oG"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ihj-YG-9fq">
