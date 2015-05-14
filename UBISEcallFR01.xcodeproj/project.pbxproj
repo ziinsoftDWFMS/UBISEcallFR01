@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E27D901B052CA8000046EA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D8C1B052CA8000046EA /* CoreGraphics.framework */; };
+		57E27D911B052CA8000046EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D8D1B052CA8000046EA /* Foundation.framework */; };
+		57E27D921B052CA8000046EA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D8E1B052CA8000046EA /* UIKit.framework */; };
+		57E27D931B052CA8000046EA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57E27D8F1B052CA8000046EA /* SystemConfiguration.framework */; };
+		57E27D951B052D08000046EA /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E27D941B052D08000046EA /* icon.png */; };
+		57E27D971B052D16000046EA /* ic_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E27D961B052D16000046EA /* ic_fire.png */; };
 		57EC0D961AFF8ECA003272E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0D951AFF8ECA003272E4 /* main.m */; };
 		57EC0D991AFF8ECA003272E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0D981AFF8ECA003272E4 /* AppDelegate.m */; };
 		57EC0D9C1AFF8ECA003272E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0D9B1AFF8ECA003272E4 /* ViewController.m */; };
@@ -14,8 +20,8 @@
 		57EC0DA11AFF8ECA003272E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DA01AFF8ECA003272E4 /* Images.xcassets */; };
 		57EC0DA41AFF8ECA003272E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DA21AFF8ECA003272E4 /* LaunchScreen.xib */; };
 		57EC0DB01AFF8ECA003272E4 /* UBISEcallFR01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DAF1AFF8ECA003272E4 /* UBISEcallFR01Tests.m */; };
-		57EC0DBB1AFF8FA3003272E4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBA1AFF8FA3003272E4 /* icon.png */; };
-		57EC0DBD1AFF8FB4003272E4 /* ic_fire.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */; };
+		57EC0DBB1AFF8FA3003272E4 /* icon_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBA1AFF8FA3003272E4 /* icon_bak.png */; };
+		57EC0DBD1AFF8FB4003272E4 /* ic_fire_bak.png in Resources */ = {isa = PBXBuildFile; fileRef = 57EC0DBC1AFF8FB4003272E4 /* ic_fire_bak.png */; };
 		57EC0DBF1AFF8FD0003272E4 /* IdentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DBE1AFF8FD0003272E4 /* IdentViewController.m */; };
 		57EC0DC51AFF8FE6003272E4 /* CAllServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DC21AFF8FE6003272E4 /* CAllServer.m */; };
 		57EC0DC61AFF8FE6003272E4 /* DwfmsSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 57EC0DC41AFF8FE6003272E4 /* DwfmsSegue.m */; };
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57E27D8C1B052CA8000046EA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreGraphics.framework; sourceTree = "<group>"; };
+		57E27D8D1B052CA8000046EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Foundation.framework; sourceTree = "<group>"; };
+		57E27D8E1B052CA8000046EA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UIKit.framework; sourceTree = "<group>"; };
+		57E27D8F1B052CA8000046EA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SystemConfiguration.framework; sourceTree = "<group>"; };
+		57E27D941B052D08000046EA /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		57E27D961B052D16000046EA /* ic_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fire.png; sourceTree = "<group>"; };
 		57EC0D901AFF8ECA003272E4 /* UBISEcallFR01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UBISEcallFR01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EC0D941AFF8ECA003272E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EC0D951AFF8ECA003272E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,8 +57,8 @@
 		57EC0DA91AFF8ECA003272E4 /* UBISEcallFR01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBISEcallFR01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57EC0DAE1AFF8ECA003272E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57EC0DAF1AFF8ECA003272E4 /* UBISEcallFR01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UBISEcallFR01Tests.m; sourceTree = "<group>"; };
-		57EC0DBA1AFF8FA3003272E4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fire.png; sourceTree = "<group>"; };
+		57EC0DBA1AFF8FA3003272E4 /* icon_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bak.png; sourceTree = "<group>"; };
+		57EC0DBC1AFF8FB4003272E4 /* ic_fire_bak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fire_bak.png; sourceTree = "<group>"; };
 		57EC0DBE1AFF8FD0003272E4 /* IdentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentViewController.m; sourceTree = "<group>"; };
 		57EC0DC01AFF8FD7003272E4 /* IdentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentViewController.h; sourceTree = "<group>"; };
 		57EC0DC11AFF8FE6003272E4 /* CAllServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAllServer.h; sourceTree = "<group>"; };
@@ -60,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E27D901B052CA8000046EA /* CoreGraphics.framework in Frameworks */,
+				57E27D921B052CA8000046EA /* UIKit.framework in Frameworks */,
+				57E27D931B052CA8000046EA /* SystemConfiguration.framework in Frameworks */,
+				57E27D911B052CA8000046EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,10 @@
 		57EC0D871AFF8ECA003272E4 = {
 			isa = PBXGroup;
 			children = (
+				57E27D8C1B052CA8000046EA /* CoreGraphics.framework */,
+				57E27D8D1B052CA8000046EA /* Foundation.framework */,
+				57E27D8E1B052CA8000046EA /* UIKit.framework */,
+				57E27D8F1B052CA8000046EA /* SystemConfiguration.framework */,
 				57EC0D921AFF8ECA003272E4 /* UBISEcallFR01 */,
 				57EC0DAC1AFF8ECA003272E4 /* UBISEcallFR01Tests */,
 				57EC0D911AFF8ECA003272E4 /* Products */,
@@ -142,8 +162,10 @@
 		57EC0DB91AFF8F93003272E4 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				57EC0DBA1AFF8FA3003272E4 /* icon.png */,
-				57EC0DBC1AFF8FB4003272E4 /* ic_fire.png */,
+				57E27D961B052D16000046EA /* ic_fire.png */,
+				57E27D941B052D08000046EA /* icon.png */,
+				57EC0DBA1AFF8FA3003272E4 /* icon_bak.png */,
+				57EC0DBC1AFF8FB4003272E4 /* ic_fire_bak.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -228,11 +250,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E27D971B052D16000046EA /* ic_fire.png in Resources */,
 				57EC0D9F1AFF8ECA003272E4 /* Main.storyboard in Resources */,
 				57EC0DA41AFF8ECA003272E4 /* LaunchScreen.xib in Resources */,
 				57EC0DA11AFF8ECA003272E4 /* Images.xcassets in Resources */,
-				57EC0DBD1AFF8FB4003272E4 /* ic_fire.png in Resources */,
-				57EC0DBB1AFF8FA3003272E4 /* icon.png in Resources */,
+				57E27D951B052D08000046EA /* icon.png in Resources */,
+				57EC0DBD1AFF8FB4003272E4 /* ic_fire_bak.png in Resources */,
+				57EC0DBB1AFF8FA3003272E4 /* icon_bak.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +405,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UBISEcallFR01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -392,6 +420,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UBISEcallFR01/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
