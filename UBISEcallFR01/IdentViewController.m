@@ -8,6 +8,8 @@
 
 #import "IdentViewController.h"
 #import "CAllServer.h"
+#import "GlobalData.h"
+
 @interface IdentViewController ()
 // create by kys 2015.5.1
 @end
@@ -35,7 +37,8 @@
     NSMutableDictionary* param = [[NSMutableDictionary alloc] init];
     [param setObject:phone forKey:@"hp"];
     [param setObject:idForVendor forKey:@"deviceId"];
-    [param setValue:@"FR01" forKey:@"code"];
+    [param setValue:[GlobalData getEmcCode] forKey:@"code"];
+    //[param setValue:@"FR01" forKey:@"code"];
     [param setValue:@"" forKey:@"gcm_id"];
     [param setValue:@"S" forKey:@"gubun"];
     NSString* str = [res stringWithUrl:@"regEmcAppInstInfo.do" VAL:param];

@@ -18,4 +18,9 @@
 +(NSString*) getHomedir{
     return homedir;
 }
+
++(NSString*) getEmcCode{
+    return EmcCode;
+}
+
 @end
