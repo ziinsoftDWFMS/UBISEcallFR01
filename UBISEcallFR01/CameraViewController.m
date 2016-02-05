@@ -58,6 +58,17 @@
 -(void) open
 {
     getImage = NO;
+    
+    /**************************************************/
+    UIImagePickerController *imagepickerController = [[UIImagePickerController alloc] init];
+    [imagepickerController setDelegate:self];
+    [imagepickerController setAllowsEditing:YES];
+    //카메라 자동 호출
+    [imagepickerController setSourceType:UIImagePickerControllerSourceTypeCamera];
+    [self presentModalViewController:imagepickerController animated:YES];
+    /**************************************************/
+    
+    /**************************************************
     UIActionSheet *actionsheet = [[UIActionSheet alloc]
                                   initWithTitle:nil
                                   delegate:self
@@ -66,6 +77,7 @@
                                   otherButtonTitles:@"사진 촬영", @"앨범에서 가져오기", nil];
     
     [actionsheet showInView:self.view];
+     **************************************************/
     
 }
 #pragma mark UIActionSheet Delegate
@@ -126,7 +138,10 @@
         getImage = YES;
         NSLog(@" 33 %@ ",(getImage ? @"YES" : @"NO"));
         
-        
+        /**************************************************/
+        [self fileUp];
+        /**************************************************/
+        /**************************************************
         UIActionSheet *isSave = [[UIActionSheet alloc]
                                  initWithTitle:nil
                                  delegate:self
@@ -134,6 +149,7 @@
                                  destructiveButtonTitle:nil
                                  otherButtonTitles:@"사진 저장", nil];
         [isSave showInView:self.view];
+        **************************************************/
     }
     else{
         [self fileUp];
