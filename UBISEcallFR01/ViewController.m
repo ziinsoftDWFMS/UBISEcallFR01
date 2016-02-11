@@ -405,7 +405,10 @@ NSString* idForVendor;
             [webView stringByEvaluatingJavaScriptFromString:returnString];
         } else if ([@"sendEmc" isEqual:type]) {
             [self sendEmc:[decoded substringFromIndex:([type length]+7)]];
+        } else if([@"sendCancel" isEqual:type]) {
+            exit(0);
         }
+            
     }
 
 
