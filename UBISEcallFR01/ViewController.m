@@ -459,7 +459,7 @@ NSString* idForVendor;
     [param setValue:EmcCode forKey:@"code"];
     [param setValue:@"S" forKey:@"gubun"];
     [param setObject:idForVendor forKey:@"deviceId"];
-    
+    [param setValue:beaconKey forKey:@"beacon_key"];
     
     
     //deviceId
