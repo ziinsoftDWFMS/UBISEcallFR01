@@ -48,6 +48,8 @@
     NSLog(@" 00 %@ ",(getImage ? @"YES" : @"NO"));
     if(!getImage){
         self.open;
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 -  (void)didReceiveMemoryWarning {
@@ -64,8 +66,10 @@
     [imagepickerController setDelegate:self];
     [imagepickerController setAllowsEditing:YES];
     //카메라 자동 호출
+    /***/
     [imagepickerController setSourceType:UIImagePickerControllerSourceTypeCamera];
     [self presentModalViewController:imagepickerController animated:YES];
+     /***/
     /**************************************************/
     
     /**************************************************
@@ -169,7 +173,12 @@
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [picker dismissModalViewControllerAnimated:YES];
+    NSLog(@" ~~~~~~~~~~~  image call cancel   !!!!");
+    //[picker dismissModalViewControllerAnimated:NO];
+    //[self dismissModalViewControllerAnimated:NO];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    getImage = YES;
+    [picker dismissViewControllerAnimated:NO completion:nil];
 }
 
 -(void) fileUp{
